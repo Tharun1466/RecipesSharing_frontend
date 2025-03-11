@@ -24,7 +24,7 @@ const Login = () => {
     event.preventDefault();
 
     try {
-      const result = await axios.post("https://recipessharing-backend-1-xe3g.onrender.com/auth/login", {
+      const result = await axios.post("https://recipessharing-backend-2.onrender.com/auth/login", {
         username,
         password,
       });
@@ -75,7 +75,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("https://recipessharing-backend-1-xe3g.onrender.com/auth/register", {
+      await axios.post("https://recipessharing-backend-2.onrender.com/auth/register", {
         username,
         password,
       });
